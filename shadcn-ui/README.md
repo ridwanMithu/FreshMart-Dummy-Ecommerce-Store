@@ -23,7 +23,7 @@ This project is configured for deployment on Netlify. The following files are im
 
 When deploying to Netlify, use these settings:
 
-1. **Build Command**: `cd shadcn-ui && pnpm install && pnpm run build`
+1. **Build Command**: `cd shadcn-ui && npm install && npm run build`
 2. **Publish Directory**: `shadcn-ui/dist`
 
 ### Customizing Product Data

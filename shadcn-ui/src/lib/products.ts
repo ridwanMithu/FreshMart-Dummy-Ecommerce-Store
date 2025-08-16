@@ -62,6 +62,156 @@ const productList: Product[] = [
     "description": "Portable Bluetooth speaker for outdoor use.",
     "rating": 4.5,
     "reviews": 250
+  },
+  {
+    "id": "6",
+    "name": "Smart Home Hub",
+    "price": 199.99,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+    "description": "Central hub for smart home devices.",
+    "rating": 4.4,
+    "reviews": 220
+  },
+  {
+    "id": "7",
+    "name": "VR Headset",
+    "price": 399.99,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+    "description": "Virtual reality headset for immersive gaming.",
+    "rating": 4.3,
+    "reviews": 200
+  },
+  {
+    "id": "8",
+    "name": "Drone Camera",
+    "price": 499.99,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+    "description": "High-resolution drone camera for aerial photography.",
+    "rating": 4.2,
+    "reviews": 180
+  },
+  {
+    "id": "9",
+    "name": "Action Camera",
+    "price": 299.99,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+    "description": "Rugged action camera for sports and adventures.",
+    "rating": 4.1,
+    "reviews": 160
+  },
+  {
+    "id": "10",
+    "name": "Smart Plug",
+    "price": 39.99,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+    "description": "Smart plug for remote control of home appliances.",
+    "rating": 4.0,
+    "reviews": 140
+  },
+  {
+    "id": "11",
+    "name": "Organic Cotton T-Shirt",
+    "price": 24.99,
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1554191456-a63c94d2b9b1?w=400&h=400&fit=crop",
+    "description": "Soft and comfortable organic cotton t-shirt.",
+    "rating": 4.9,
+    "reviews": 450
+  },
+  {
+    "id": "12",
+    "name": "Denim Jeans",
+    "price": 49.99,
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1554191456-a63c94d2b9b1?w=400&h=400&fit=crop",
+    "description": "Stylish and durable denim jeans.",
+    "rating": 4.8,
+    "reviews": 350
+  },
+  {
+    "id": "13",
+    "name": "Leather Boots",
+    "price": 129.99,
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1554191456-a63c94d2b9b1?w=400&h=400&fit=crop",
+    "description": "Premium leather boots for a classic look.",
+    "rating": 4.7,
+    "reviews": 320
+  },
+  {
+    "id": "14",
+    "name": "Silk Dress",
+    "price": 89.99,
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1554191456-a63c94d2b9b1?w=400&h=400&fit=crop",
+    "description": "Elegant silk dress for special occasions.",
+    "rating": 4.6,
+    "reviews": 280
+  },
+  {
+    "id": "15",
+    "name": "Wool Sweater",
+    "price": 69.99,
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1554191456-a63c94d2b9b1?w=400&h=400&fit=crop",
+    "description": "Warm and cozy wool sweater.",
+    "rating": 4.5,
+    "reviews": 250
+  },
+  {
+    "id": "16",
+    "name": "Sunglasses",
+    "price": 39.99,
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1554191456-a63c94d2b9b1?w=400&h=400&fit=crop",
+    "description": "Stylish sunglasses for sunny days.",
+    "rating": 4.4,
+    "reviews": 220
+  },
+  {
+    "id": "17",
+    "name": "Belt",
+    "price": 29.99,
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1554191456-a63c94d2b9b1?w=400&h=400&fit=crop",
+    "description": "Leather belt for a polished look.",
+    "rating": 4.3,
+    "reviews": 200
+  },
+  {
+    "id": "18",
+    "name": "Hat",
+    "price": 19.99,
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1554191456-a63c94d2b9b1?w=400&h=400&fit=crop",
+    "description": "Trendy hat for a fashionable touch.",
+    "rating": 4.2,
+    "reviews": 180
+  },
+  {
+    "id": "19",
+    "name": "Scarf",
+    "price": 24.99,
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1554191456-a63c94d2b9b1?w=400&h=400&fit=crop",
+    "description": "Soft scarf for a cozy accessory.",
+    "rating": 4.1,
+    "reviews": 160
+  },
+  {
+    "id": "20",
+    "name": "Gloves",
+    "price": 29.99,
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1554191456-a63c94d2b9b1?w=400&h=400&fit=crop",
+    "description": "Warm gloves for cold weather.",
+    "rating": 4.0,
+    "reviews": 140
   }
 ];
 
