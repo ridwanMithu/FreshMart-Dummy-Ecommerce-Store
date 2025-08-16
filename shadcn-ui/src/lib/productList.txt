@@ -1,0 +1,1000 @@
+{
+  "id": "1",
+  "name": "Smartphone Pro",
+  "price": 799.99,
+  "category": "Electronics",
+  "image": "https://images.unsplash.com/photo-1554481600-a51e0a1f8c6b?w=400&h=400&fit=crop",
+  "description": "The latest flagship smartphone with advanced features.",
+  "rating": 4.9,
+  "reviews": 450
+},
+{
+  "id": "2",
+  "name": "Wireless Earbuds",
+  "price": 129.99,
+  "category": "Electronics",
+  "image": "https://images.unsplash.com/photo-1550620703-8f5c7b4a3b8b?w=400&h=400&fit=crop",
+  "description": "High-quality wireless earbuds for music lovers.",
+  "rating": 4.8,
+  "reviews": 350
+},
+{
+  "id": "3",
+  "name": "Gaming Laptop",
+  "price": 1499.99,
+  "category": "Electronics",
+  "image": "https://images.unsplash.com/photo-1556234929-1f4d01a7d0f9?w=400&h=400&fit=crop",
+  "description": "Powerful gaming laptop for serious gamers.",
+  "rating": 4.7,
+  "reviews": 320
+},
+{
+  "id": "4",
+  "name": "Smart Watch",
+  "price": 249.99,
+  "category": "Electronics",
+  "image": "https://images.unsplash.com/photo-1508704019889-8e3f5a4e3d8e?w=400&h=400&fit=crop",
+  "description": "Smart watch with fitness tracking features.",
+  "rating": 4.6,
+  "reviews": 280
+},
+{
+  "id": "5",
+  "name": "Bluetooth Speaker",
+  "price": 99.99,
+  "category": "Electronics",
+  "image": "https://images.unsplash.com/photo-1556234929-1f4d01a7d0f9?w=400&h=400&fit=crop",
+  "description": "Portable Bluetooth speaker for outdoor use.",
+  "rating": 4.5,
+  "reviews": 250
+},
+{
+  "id": "6",
+  "name": "Smart Home Hub",
+  "price": 199.99,
+  "category": "Electronics",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Central hub for smart home devices.",
+  "rating": 4.4,
+  "reviews": 220
+},
+{
+  "id": "7",
+  "name": "VR Headset",
+  "price": 399.99,
+  "category": "Electronics",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Virtual reality headset for immersive gaming.",
+  "rating": 4.3,
+  "reviews": 200
+},
+{
+  "id": "8",
+  "name": "Drone Camera",
+  "price": 499.99,
+  "category": "Electronics",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "High-resolution drone camera for aerial photography.",
+  "rating": 4.2,
+  "reviews": 180
+},
+{
+  "id": "9",
+  "name": "Action Camera",
+  "price": 299.99,
+  "category": "Electronics",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Rugged action camera for sports and adventures.",
+  "rating": 4.1,
+  "reviews": 160
+},
+{
+  "id": "10",
+  "name": "Smart Plug",
+  "price": 39.99,
+  "category": "Electronics",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Smart plug for remote control of home appliances.",
+  "rating": 4.0,
+  "reviews": 140
+},
+{
+  "id": "11",
+  "name": "Wireless Charger",
+  "price": 69.99,
+  "category": "Electronics",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Wireless charging pad for Qi-enabled devices.",
+  "rating": 3.9,
+  "reviews": 120
+},
+{
+  "id": "12",
+  "name": "Soundbar",
+  "price": 179.99,
+  "category": "Electronics",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Soundbar for enhanced audio experience.",
+  "rating": 3.8,
+  "reviews": 100
+},
+{
+  "id": "13",
+  "name": "Organic Cotton T-Shirt",
+  "price": 24.99,
+  "category": "Fashion",
+  "image": "https://images.unsplash.com/photo-1554191456-a63c94d2b9b1?w=400&h=400&fit=crop",
+  "description": "Soft and comfortable organic cotton t-shirt.",
+  "rating": 4.9,
+  "reviews": 450
+},
+{
+  "id": "14",
+  "name": "Denim Jeans",
+  "price": 49.99,
+  "category": "Fashion",
+  "image": "https://images.unsplash.com/photo-1554191456-a63c94d2b9b1?w=400&h=400&fit=crop",
+  "description": "Stylish and durable denim jeans.",
+  "rating": 4.8,
+  "reviews": 350
+},
+{
+  "id": "15",
+  "name": "Leather Boots",
+  "price": 129.99,
+  "category": "Fashion",
+  "image": "https://images.unsplash.com/photo-1554191456-a63c94d2b9b1?w=400&h=400&fit=crop",
+  "description": "Premium leather boots for a classic look.",
+  "rating": 4.7,
+  "reviews": 320
+},
+{
+  "id": "16",
+  "name": "Silk Dress",
+  "price": 89.99,
+  "category": "Fashion",
+  "image": "https://images.unsplash.com/photo-1554191456-a63c94d2b9b1?w=400&h=400&fit=crop",
+  "description": "Elegant silk dress for special occasions.",
+  "rating": 4.6,
+  "reviews": 280
+},
+{
+  "id": "17",
+  "name": "Wool Sweater",
+  "price": 69.99,
+  "category": "Fashion",
+  "image": "https://images.unsplash.com/photo-1554191456-a63c94d2b9b1?w=400&h=400&fit=crop",
+  "description": "Warm and cozy wool sweater.",
+  "rating": 4.5,
+  "reviews": 250
+},
+{
+  "id": "18",
+  "name": "Sunglasses",
+  "price": 39.99,
+  "category": "Fashion",
+  "image": "https://images.unsplash.com/photo-1554191456-a63c94d2b9b1?w=400&h=400&fit=crop",
+  "description": "Stylish sunglasses for sunny days.",
+  "rating": 4.4,
+  "reviews": 220
+},
+{
+  "id": "19",
+  "name": "Belt",
+  "price": 29.99,
+  "category": "Fashion",
+  "image": "https://images.unsplash.com/photo-1554191456-a63c94d2b9b1?w=400&h=400&fit=crop",
+  "description": "Leather belt for a polished look.",
+  "rating": 4.3,
+  "reviews": 200
+},
+{
+  "id": "20",
+  "name": "Hat",
+  "price": 19.99,
+  "category": "Fashion",
+  "image": "https://images.unsplash.com/photo-1554191456-a63c94d2b9b1?w=400&h=400&fit=crop",
+  "description": "Trendy hat for a fashionable touch.",
+  "rating": 4.2,
+  "reviews": 180
+},
+{
+  "id": "21",
+  "name": "Scarf",
+  "price": 24.99,
+  "category": "Fashion",
+  "image": "https://images.unsplash.com/photo-1554191456-a63c94d2b9b1?w=400&h=400&fit=crop",
+  "description": "Soft scarf for a cozy accessory.",
+  "rating": 4.1,
+  "reviews": 160
+},
+{
+  "id": "22",
+  "name": "Gloves",
+  "price": 29.99,
+  "category": "Fashion",
+  "image": "https://images.unsplash.com/photo-1554191456-a63c94d2b9b1?w=400&h=400&fit=crop",
+  "description": "Warm gloves for cold weather.",
+  "rating": 4.0,
+  "reviews": 140
+},
+{
+  "id": "23",
+  "name": "Jacket",
+  "price": 89.99,
+  "category": "Fashion",
+  "image": "https://images.unsplash.com/photo-1554191456-a63c94d2b9b1?w=400&h=400&fit=crop",
+  "description": "Stylish jacket for a chic look.",
+  "rating": 3.9,
+  "reviews": 120
+},
+{
+  "id": "24",
+  "name": "Dress",
+  "price": 59.99,
+  "category": "Fashion",
+  "image": "https://images.unsplash.com/photo-1554191456-a63c94d2b9b1?w=400&h=400&fit=crop",
+  "description": "Flattering dress for any occasion.",
+  "rating": 3.8,
+  "reviews": 100
+},
+{
+  "id": "25",
+  "name": "Outdoor Grill",
+  "price": 199.99,
+  "category": "Home & Garden",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Durable outdoor grill for backyard barbecues.",
+  "rating": 4.9,
+  "reviews": 450
+},
+{
+  "id": "26",
+  "name": "Garden Hose",
+  "price": 29.99,
+  "category": "Home & Garden",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Expandable garden hose for easy watering.",
+  "rating": 4.8,
+  "reviews": 350
+},
+{
+  "id": "27",
+  "name": "Patio Furniture Set",
+  "price": 399.99,
+  "category": "Home & Garden",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Stylish patio furniture set for outdoor relaxation.",
+  "rating": 4.7,
+  "reviews": 320
+},
+{
+  "id": "28",
+  "name": "Indoor Plant",
+  "price": 19.99,
+  "category": "Home & Garden",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Low-maintenance indoor plant for a touch of greenery.",
+  "rating": 4.6,
+  "reviews": 280
+},
+{
+  "id": "29",
+  "name": "Lawn Mower",
+  "price": 129.99,
+  "category": "Home & Garden",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Efficient lawn mower for a well-maintained lawn.",
+  "rating": 4.5,
+  "reviews": 250
+},
+{
+  "id": "30",
+  "name": "Gardening Tools",
+  "price": 49.99,
+  "category": "Home & Garden",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Complete set of gardening tools for all your gardening needs.",
+  "rating": 4.4,
+  "reviews": 220
+},
+{
+  "id": "31",
+  "name": "Potted Flower",
+  "price": 9.99,
+  "category": "Home & Garden",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Beautiful potted flower for a pop of color.",
+  "rating": 4.3,
+  "reviews": 200
+},
+{
+  "id": "32",
+  "name": "Bird Feeder",
+  "price": 19.99,
+  "category": "Home & Garden",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Attractive bird feeder to attract local wildlife.",
+  "rating": 4.2,
+  "reviews": 180
+},
+{
+  "id": "33",
+  "name": "Compost Bin",
+  "price": 39.99,
+  "category": "Home & Garden",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Durable compost bin for sustainable gardening.",
+  "rating": 4.1,
+  "reviews": 160
+},
+{
+  "id": "34",
+  "name": "Gardening Gloves",
+  "price": 12.99,
+  "category": "Home & Garden",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Protective gardening gloves for your hands.",
+  "rating": 4.0,
+  "reviews": 140
+},
+{
+  "id": "35",
+  "name": "Plant Pot",
+  "price": 7.99,
+  "category": "Home & Garden",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Sturdy plant pot for your favorite plants.",
+  "rating": 3.9,
+  "reviews": 120
+},
+{
+  "id": "36",
+  "name": "Gardening Apron",
+  "price": 24.99,
+  "category": "Home & Garden",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Functional gardening apron with pockets.",
+  "rating": 3.8,
+  "reviews": 100
+},
+{
+  "id": "37",
+  "name": "Running Shoes",
+  "price": 89.99,
+  "category": "Sports",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Comfortable running shoes for long-distance running.",
+  "rating": 4.9,
+  "reviews": 450
+},
+{
+  "id": "38",
+  "name": "Yoga Mat",
+  "price": 29.99,
+  "category": "Sports",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Non-slip yoga mat for your yoga practice.",
+  "rating": 4.8,
+  "reviews": 350
+},
+{
+  "id": "39",
+  "name": "Basketball",
+  "price": 19.99,
+  "category": "Sports",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Official-sized basketball for competitive play.",
+  "rating": 4.7,
+  "reviews": 320
+},
+{
+  "id": "40",
+  "name": "Tennis Racket",
+  "price": 79.99,
+  "category": "Sports",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Lightweight tennis racket for powerful swings.",
+  "rating": 4.6,
+  "reviews": 280
+},
+{
+  "id": "41",
+  "name": "Golf Clubs",
+  "price": 299.99,
+  "category": "Sports",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Set of golf clubs for the golf enthusiast.",
+  "rating": 4.5,
+  "reviews": 250
+},
+{
+  "id": "42",
+  "name": "Soccer Ball",
+  "price": 24.99,
+  "category": "Sports",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Durable soccer ball for outdoor play.",
+  "rating": 4.4,
+  "reviews": 220
+},
+{
+  "id": "43",
+  "name": "Skateboard",
+  "price": 59.99,
+  "category": "Sports",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Sturdy skateboard for beginners and pros alike.",
+  "rating": 4.3,
+  "reviews": 200
+},
+{
+  "id": "44",
+  "name": "Bicycle Helmet",
+  "price": 39.99,
+  "category": "Sports",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Safety bicycle helmet for safe cycling.",
+  "rating": 4.2,
+  "reviews": 180
+},
+{
+  "id": "45",
+  "name": "Fishing Rod",
+  "price": 49.99,
+  "category": "Sports",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "High-quality fishing rod for anglers.",
+  "rating": 4.1,
+  "reviews": 160
+},
+{
+  "id": "46",
+  "name": "Swimsuit",
+  "price": 29.99,
+  "category": "Sports",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Durable swimsuit for swimming and water sports.",
+  "rating": 4.0,
+  "reviews": 140
+},
+{
+  "id": "47",
+  "name": "Gym Bag",
+  "price": 39.99,
+  "category": "Sports",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Spacious gym bag for all your workout gear.",
+  "rating": 3.9,
+  "reviews": 120
+},
+{
+  "id": "48",
+  "name": "Tennis Ball",
+  "price": 9.99,
+  "category": "Sports",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Pack of tennis balls for practice and play.",
+  "rating": 3.8,
+  "reviews": 100
+},
+{
+  "id": "49",
+  "name": "Science Fiction Novel",
+  "price": 14.99,
+  "category": "Books",
+  "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=400&fit=crop",
+  "description": "A thrilling science fiction adventure.",
+  "rating": 4.9,
+  "reviews": 450
+},
+{
+  "id": "50",
+  "name": "Cookbook",
+  "price": 19.99,
+  "category": "Books",
+  "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=400&fit=crop",
+  "description": "A collection of delicious recipes from around the world.",
+  "rating": 4.8,
+  "reviews": 350
+},
+{
+  "id": "51",
+  "name": "Biography",
+  "price": 16.99,
+  "category": "Books",
+  "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=400&fit=crop",
+  "description": "The inspiring story of a famous personality.",
+  "rating": 4.7,
+  "reviews": 320
+},
+{
+  "id": "52",
+  "name": "Travel Guide",
+  "price": 12.99,
+  "category": "Books",
+  "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=400&fit=crop",
+  "description": "A comprehensive travel guide to your dream destination.",
+  "rating": 4.6,
+  "reviews": 280
+},
+{
+  "id": "53",
+  "name": "Fantasy Novel",
+  "price": 13.99,
+  "category": "Books",
+  "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=400&fit=crop",
+  "description": "A magical journey into a fantastical world.",
+  "rating": 4.5,
+  "reviews": 250
+},
+{
+  "id": "54",
+  "name": "Historical Fiction",
+  "price": 15.99,
+  "category": "Books",
+  "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=400&fit=crop",
+  "description": "A gripping tale set in a historical period.",
+  "rating": 4.4,
+  "reviews": 220
+},
+{
+  "id": "55",
+  "name": "Mystery Novel",
+  "price": 9.99,
+  "category": "Books",
+  "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=400&fit=crop",
+  "description": "A suspenseful mystery that keeps you guessing.",
+  "rating": 4.3,
+  "reviews": 200
+},
+{
+  "id": "56",
+  "name": "Poetry Collection",
+  "price": 11.99,
+  "category": "Books",
+  "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=400&fit=crop",
+  "description": "A beautiful collection of poems.",
+  "rating": 4.2,
+  "reviews": 180
+},
+{
+  "id": "57",
+  "name": "Children's Book",
+  "price": 8.99,
+  "category": "Books",
+  "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=400&fit=crop",
+  "description": "A charming story for young readers.",
+  "rating": 4.1,
+  "reviews": 160
+},
+{
+  "id": "58",
+  "name": "Self-Help Book",
+  "price": 14.99,
+  "category": "Books",
+  "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=400&fit=crop",
+  "description": "Practical advice for personal growth and development.",
+  "rating": 4.0,
+  "reviews": 140
+},
+{
+  "id": "59",
+  "name": "Business Book",
+  "price": 18.99,
+  "category": "Books",
+  "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=400&fit=crop",
+  "description": "Insights into successful business strategies.",
+  "rating": 3.9,
+  "reviews": 120
+},
+{
+  "id": "60",
+  "name": "Humor Book",
+  "price": 12.99,
+  "category": "Books",
+  "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=400&fit=crop",
+  "description": "A collection of funny stories and jokes.",
+  "rating": 3.8,
+  "reviews": 100
+},
+{
+  "id": "61",
+  "name": "Moisturizer",
+  "price": 19.99,
+  "category": "Beauty",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Hydrating moisturizer for all skin types.",
+  "rating": 4.9,
+  "reviews": 450
+},
+{
+  "id": "62",
+  "name": "Lipstick",
+  "price": 12.99,
+  "category": "Beauty",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Long-lasting lipstick in various shades.",
+  "rating": 4.8,
+  "reviews": 350
+},
+{
+  "id": "63",
+  "name": "Facial Cleanser",
+  "price": 15.99,
+  "category": "Beauty",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Gentle facial cleanser for a clean and refreshed complexion.",
+  "rating": 4.7,
+  "reviews": 320
+},
+{
+  "id": "64",
+  "name": "Hair Mask",
+  "price": 22.99,
+  "category": "Beauty",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Intensive hair mask for nourished and healthy hair.",
+  "rating": 4.6,
+  "reviews": 280
+},
+{
+  "id": "65",
+  "name": "Makeup Palette",
+  "price": 29.99,
+  "category": "Beauty",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "All-in-one makeup palette for a complete look.",
+  "rating": 4.5,
+  "reviews": 250
+},
+{
+  "id": "66",
+  "name": "Nail Polish",
+  "price": 7.99,
+  "category": "Beauty",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Chic nail polish in a variety of colors.",
+  "rating": 4.4,
+  "reviews": 220
+},
+{
+  "id": "67",
+  "name": "Body Lotion",
+  "price": 14.99,
+  "category": "Beauty",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Soothing body lotion for soft and smooth skin.",
+  "rating": 4.3,
+  "reviews": 200
+},
+{
+  "id": "68",
+  "name": "Facial Serum",
+  "price": 39.99,
+  "category": "Beauty",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Anti-aging facial serum for a youthful glow.",
+  "rating": 4.2,
+  "reviews": 180
+},
+{
+  "id": "69",
+  "name": "Eyeshadow",
+  "price": 16.99,
+  "category": "Beauty",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Highly pigmented eyeshadow for a bold look.",
+  "rating": 4.1,
+  "reviews": 160
+},
+{
+  "id": "70",
+  "name": "Mascara",
+  "price": 19.99,
+  "category": "Beauty",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Lengthening mascara for voluminous lashes.",
+  "rating": 4.0,
+  "reviews": 140
+},
+{
+  "id": "71",
+  "name": "Foundation",
+  "price": 24.99,
+  "category": "Beauty",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Full-coverage foundation for a flawless finish.",
+  "rating": 3.9,
+  "reviews": 120
+},
+{
+  "id": "72",
+  "name": "Blush",
+  "price": 15.99,
+  "category": "Beauty",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Natural-looking blush for a healthy flush.",
+  "rating": 3.8,
+  "reviews": 100
+},
+{
+  "id": "73",
+  "name": "Remote-Control Car",
+  "price": 29.99,
+  "category": "Toys",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Fun remote-control car for kids.",
+  "rating": 4.9,
+  "reviews": 450
+},
+{
+  "id": "74",
+  "name": "Building Blocks",
+  "price": 19.99,
+  "category": "Toys",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Creative building blocks for endless fun.",
+  "rating": 4.8,
+  "reviews": 350
+},
+{
+  "id": "75",
+  "name": "Dollhouse",
+  "price": 49.99,
+  "category": "Toys",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Detailed dollhouse for imaginative play.",
+  "rating": 4.7,
+  "reviews": 320
+},
+{
+  "id": "76",
+  "name": "Puzzle",
+  "price": 9.99,
+  "category": "Toys",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Challenging puzzle for problem-solving skills.",
+  "rating": 4.6,
+  "reviews": 280
+},
+{
+  "id": "77",
+  "name": "Action Figure",
+  "price": 14.99,
+  "category": "Toys",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Collectible action figure for fans.",
+  "rating": 4.5,
+  "reviews": 250
+},
+{
+  "id": "78",
+  "name": "Board Game",
+  "price": 24.99,
+  "category": "Toys",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Engaging board game for family fun.",
+  "rating": 4.4,
+  "reviews": 220
+},
+{
+  "id": "79",
+  "name": "Teddy Bear",
+  "price": 19.99,
+  "category": "Toys",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Soft and cuddly teddy bear.",
+  "rating": 4.3,
+  "reviews": 200
+},
+{
+  "id": "80",
+  "name": "Educational Toy",
+  "price": 29.99,
+  "category": "Toys",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Interactive educational toy for learning and play.",
+  "rating": 4.2,
+  "reviews": 180
+},
+{
+  "id": "81",
+  "name": "Bike",
+  "price": 89.99,
+  "category": "Toys",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Durable kids' bike for outdoor adventures.",
+  "rating": 4.1,
+  "reviews": 160
+},
+{
+  "id": "82",
+  "name": "Art Set",
+  "price": 19.99,
+  "category": "Toys",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Complete art set for creative expression.",
+  "rating": 4.0,
+  "reviews": 140
+},
+{
+  "id": "83",
+  "name": "Toy Car",
+  "price": 14.99,
+  "category": "Toys",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Realistic toy car for playtime.",
+  "rating": 3.9,
+  "reviews": 120
+},
+{
+  "id": "84",
+  "name": "Drum Set",
+  "price": 49.99,
+  "category": "Toys",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Mini drum set for budding musicians.",
+  "rating": 3.8,
+  "reviews": 100
+},
+{
+  "id": "85",
+  "name": "Car Seat Cover",
+  "price": 29.99,
+  "category": "Automotive",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Protective car seat cover.",
+  "rating": 4.9,
+  "reviews": 450
+},
+{
+  "id": "86",
+  "name": "Windshield Wipers",
+  "price": 19.99,
+  "category": "Automotive",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "High-performance windshield wipers.",
+  "rating": 4.8,
+  "reviews": 350
+},
+{
+  "id": "87",
+  "name": "Car Air Fresher",
+  "price": 5.99,
+  "category": "Automotive",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Long-lasting car air freshener.",
+  "rating": 4.7,
+  "reviews": 320
+},
+{
+  "id": "88",
+  "name": "Car Charger",
+  "price": 12.99,
+  "category": "Automotive",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Convenient car charger for on-the-go.",
+  "rating": 4.6,
+  "reviews": 280
+},
+{
+  "id": "89",
+  "name": "Tire Pressure Monitor",
+  "price": 29.99,
+  "category": "Automotive",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Accurate tire pressure monitor for safety.",
+  "rating": 4.5,
+  "reviews": 250
+},
+{
+  "id": "90",
+  "name": "Car Phone Mount",
+  "price": 14.99,
+  "category": "Automotive",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Secure car phone mount for navigation.",
+  "rating": 4.4,
+  "reviews": 220
+},
+{
+  "id": "91",
+  "name": "Emergency Kit",
+  "price": 39.99,
+  "category": "Automotive",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Essential emergency kit for roadside assistance.",
+  "rating": 4.3,
+  "reviews": 200
+},
+{
+  "id": "92",
+  "name": "Car Seat Belt",
+  "price": 9.99,
+  "category": "Automotive",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Adjustable car seat belt for comfort.",
+  "rating": 4.2,
+  "reviews": 180
+},
+{
+  "id": "93",
+  "name": "Car Floor Mats",
+  "price": 24.99,
+  "category": "Automotive",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Custom car floor mats for protection.",
+  "rating": 4.1,
+  "reviews": 160
+},
+{
+  "id": "94",
+  "name": "Car Keychain",
+  "price": 7.99,
+  "category": "Automotive",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Stylish car keychain.",
+  "rating": 4.0,
+  "reviews": 140
+},
+{
+  "id": "95",
+  "name": "Car Air Purifier",
+  "price": 39.99,
+  "category": "Automotive",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Compact car air purifier for fresh air.",
+  "rating": 3.9,
+  "reviews": 120
+},
+{
+  "id": "96",
+  "name": "Car Sunshade",
+  "price": 19.99,
+  "category": "Automotive",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Effective car sunshade for cooling.",
+  "rating": 3.8,
+  "reviews": 100
+},
+{
+  "id": "97",
+  "name": "Car Seat Belt Extender",
+  "price": 12.99,
+  "category": "Automotive",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Practical car seat belt extender for comfort.",
+  "rating": 3.7,
+  "reviews": 90
+},
+{
+  "id": "98",
+  "name": "Car Cup Holder",
+  "price": 9.99,
+  "category": "Automotive",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Versatile car cup holder for convenience.",
+  "rating": 3.6,
+  "reviews": 80
+},
+{
+  "id": "99",
+  "name": "Car Seat Protector",
+  "price": 24.99,
+  "category": "Automotive",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Durable car seat protector.",
+  "rating": 3.5,
+  "reviews": 70
+},
+{
+  "id": "100",
+  "name": "Car Interior Cleaner",
+  "price": 14.99,
+  "category": "Automotive",
+  "image": "https://images.unsplash.com/photo-1510194846138-bf06dc9da5c1?w=400&h=400&fit=crop",
+  "description": "Powerful car interior cleaner for a fresh look.",
+  "rating": 3.4,
+  "reviews": 60
+}

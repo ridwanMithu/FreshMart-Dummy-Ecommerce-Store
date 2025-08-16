@@ -1,13 +1,32 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { ShoppingCart, Search, Heart, Star, Menu, User, LogOut } from 'lucide-react';
+import {
+  ShoppingCart,
+  Search,
+  Heart,
+  Star,
+  Menu,
+  User,
+  LogOut,
+  Filter,
+  ChevronDown,
+  SlidersHorizontal
+} from 'lucide-react';
 import LoginDialog from '@/components/LoginDialog';
 import AdminPanel from '@/components/AdminPanel';
 import { getCurrentUser, logout, isAdmin, User as UserType } from '@/lib/auth';
 import { getProducts, searchProducts, getProductsByCategory, Product } from '@/lib/products';
+
+interface FilterOptions {
+  minPrice: number | null;
+  maxPrice: number | null;
+  minRating: number | null;
+  sortBy: 'price-asc' | 'price-desc' | 'rating-desc' | 'name-asc' | 'name-desc';
+}
 
 const categories = [
   'Electronics', 'Fashion', 'Home & Garden', 'Sports', 'Books', 'Beauty', 'Toys', 'Automotive'
@@ -20,6 +39,13 @@ export default function HomePage() {
   const [products, setProducts] = useState<Product[]>([]);
   const [displayProducts, setDisplayProducts] = useState<Product[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<string>('');
+  const [showFilters, setShowFilters] = useState(false);
+  const [filterOptions, setFilterOptions] = useState<FilterOptions>({
+    minPrice: null,
+    maxPrice: null,
+    minRating: null,
+    sortBy: 'rating-desc'
+  });
 
   useEffect(() => {
     setCurrentUser(getCurrentUser());
@@ -28,7 +54,7 @@ export default function HomePage() {
 
   useEffect(() => {
     handleSearch();
-  }, [searchQuery, selectedCategory, products]);
+  }, [searchQuery, selectedCategory, products, filterOptions]);
 
   const loadProducts = () => {
     const allProducts = getProducts();
@@ -37,17 +63,50 @@ export default function HomePage() {
   };
 
   const handleSearch = () => {
-    let filtered = products;
+    let filtered = [...products];
     
+    // Apply category filter
     if (selectedCategory) {
-      filtered = getProductsByCategory(selectedCategory);
+      filtered = filtered.filter(p => p.category === selectedCategory);
     }
     
+    // Apply search query
     if (searchQuery.trim()) {
-      filtered = searchProducts(searchQuery);
-      if (selectedCategory) {
-        filtered = filtered.filter(p => p.category === selectedCategory);
-      }
+      const searchResults = searchProducts(searchQuery);
+      filtered = filtered.filter(p => searchResults.some(r => r.id === p.id));
+    }
+    
+    // Apply price filters
+    if (filterOptions.minPrice !== null) {
+      filtered = filtered.filter(p => p.price >= filterOptions.minPrice!);
+    }
+    
+    if (filterOptions.maxPrice !== null) {
+      filtered = filtered.filter(p => p.price <= filterOptions.maxPrice!);
+    }
+    
+    // Apply rating filter
+    if (filterOptions.minRating !== null) {
+      filtered = filtered.filter(p => p.rating >= filterOptions.minRating!);
+    }
+    
+    // Apply sorting
+    switch (filterOptions.sortBy) {
+      case 'price-asc':
+        filtered.sort((a, b) => a.price - b.price);
+        break;
+      case 'price-desc':
+        filtered.sort((a, b) => b.price - a.price);
+        break;
+      case 'rating-desc':
+        filtered.sort((a, b) => b.rating - a.rating);
+        break;
+      case 'name-asc':
+        filtered.sort((a, b) => a.name.localeCompare(b.name));
+        break;
+      case 'name-desc':
+        filtered.sort((a, b) => b.name.localeCompare(a.name));
+        break;
     }
     
     setDisplayProducts(filtered);
@@ -100,7 +159,102 @@ export default function HomePage() {
               <div className="text-2xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
                 FreshMart
               </div>
+              
+              {/* Filter Button */}
+              <div className="flex items-center">
+                <Button
+                  variant="outline"
+                  onClick={() => setShowFilters(!showFilters)}
+                  className="flex items-center"
+                >
+                  <SlidersHorizontal className="w-4 h-4 mr-2" />
+                  Filters
+                  <ChevronDown className={`w-4 h-4 ml-2 transition-transform ${showFilters ? 'rotate-180' : ''}`} />
+                </Button>
+              </div>
             </div>
+            
+            {/* Filter Panel */}
+            {showFilters && (
+              <div className="bg-white border border-green-200 rounded-lg p-4 mt-4">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+                  {/* Price Range */}
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Price Range</label>
+                    <div className="flex space-x-2">
+                      <Input
+                        type="number"
+                        placeholder="Min"
+                        value={filterOptions.minPrice || ''}
+                        onChange={(e) => setFilterOptions({
+                          ...filterOptions,
+                          minPrice: e.target.value ? parseFloat(e.target.value) : null
+                        })}
+                        className="w-full"
+                      />
+                      <Input
+                        type="number"
+                        placeholder="Max"
+                        value={filterOptions.maxPrice || ''}
+                        onChange={(e) => setFilterOptions({
+                          ...filterOptions,
+                          maxPrice: e.target.value ? parseFloat(e.target.value) : null
+                        })}
+                        className="w-full"
+                      />
+                    </div>
+                  </div>
+                  
+                  {/* Minimum Rating */}
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Minimum Rating</label>
+                    <select
+                      value={filterOptions.minRating || ''}
+                      onChange={(e) => setFilterOptions({
+                        ...filterOptions,
+                        minRating: e.target.value ? parseFloat(e.target.value) : null
+                      })}
+                      className="w-full border border-gray-300 rounded-md px-3 py-2"
+                    >
+                      <option value="">Any Rating</option>
+                      <option value="4">4+ Stars</option>
+                      <option value="3">3+ Stars</option>
+                      <option value="2">2+ Stars</option>
+                      <option value="1">1+ Stars</option>
+                    </select>
+                  </div>
+                  
+                  {/* Sort By */}
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Sort By</label>
+                    <select
+                      value={filterOptions.sortBy}
+                      onChange={(e) => setFilterOptions({
+                        ...filterOptions,
+                        sortBy: e.target.value as FilterOptions['sortBy']
+                      })}
+                      className="w-full border border-gray-300 rounded-md px-3 py-2"
+                    >
+                      <option value="rating-desc">Rating: High to Low</option>
+                      <option value="price-asc">Price: Low to High</option>
+                      <option value="price-desc">Price: High to Low</option>
+                      <option value="name-asc">Name: A to Z</option>
+                      <option value="name-desc">Name: Z to A</option>
+                    </select>
+                  </div>
+                  
+                  {/* Apply Button */}
+                  <div className="flex items-end">
+                    <Button
+                      onClick={handleSearch}
+                      className="w-full bg-green-600 hover:bg-green-700"
+                    >
+                      Apply Filters
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            )}
 
             {/* Search Bar */}
             <div className="flex-1 max-w-2xl mx-8">
@@ -130,6 +284,12 @@ export default function HomePage() {
                   <span className="text-sm text-green-700">
                     Welcome, {currentUser.name}!
                   </span>
+                  <Link to="/profile">
+                    <Button variant="ghost" size="sm" className="text-green-700 hover:text-green-800 hover:bg-green-100">
+                      <User className="w-5 h-5 mr-2" />
+                      Profile
+                    </Button>
+                  </Link>
                   {isAdmin() && <AdminPanel onProductAdded={handleProductAdded} />}
                   <Button variant="ghost" size="sm" className="text-green-700 hover:text-green-800 hover:bg-green-100">
                     <Heart className="w-5 h-5 mr-2" />
@@ -234,56 +394,61 @@ export default function HomePage() {
         {displayProducts.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {displayProducts.map((product) => (
-              <Card key={product.id} className="group hover:shadow-lg transition-all duration-300 border-green-100 hover:border-green-300">
-                <CardHeader className="p-0">
-                  <div className="relative overflow-hidden rounded-t-lg">
-                    <img
-                      src={product.image}
-                      alt={product.name}
-                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                    {product.discount && (
-                      <Badge className="absolute top-2 left-2 bg-red-500 text-white">
-                        {product.discount}
-                      </Badge>
-                    )}
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      className="absolute top-2 right-2 bg-white/80 hover:bg-white text-gray-700"
-                    >
-                      <Heart className="w-4 h-4" />
-                    </Button>
-                  </div>
-                </CardHeader>
-                <CardContent className="p-4">
-                  <Badge variant="secondary" className="mb-2 bg-green-100 text-green-800">
-                    {product.category}
-                  </Badge>
-                  <CardTitle className="text-lg mb-2 line-clamp-2">{product.name}</CardTitle>
-                  <div className="flex items-center mb-2">
-                    <div className="flex items-center mr-2">
-                      {renderStars(product.rating)}
+              <Link key={product.id} to={`/product/${product.id}`} className="block">
+                <Card className="group hover:shadow-lg transition-all duration-300 border-green-100 hover:border-green-300 h-full">
+                  <CardHeader className="p-0">
+                    <div className="relative overflow-hidden rounded-t-lg">
+                      <img
+                        src={product.image}
+                        alt={product.name}
+                        className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                      {product.discount && (
+                        <Badge className="absolute top-2 left-2 bg-red-500 text-white">
+                          {product.discount}
+                        </Badge>
+                      )}
+                      <Button
+                        variant="ghost"
+                        size="sm"
+                        className="absolute top-2 right-2 bg-white/80 hover:bg-white text-gray-700"
+                      >
+                        <Heart className="w-4 h-4" />
+                      </Button>
                     </div>
-                    <span className="text-sm text-gray-600">({product.reviews})</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <span className="text-2xl font-bold text-green-600">${product.price}</span>
-                    {product.originalPrice && (
-                      <span className="text-sm text-gray-500 line-through">${product.originalPrice}</span>
-                    )}
-                  </div>
-                </CardContent>
-                <CardFooter className="p-4 pt-0">
-                  <Button 
-                    onClick={addToCart}
-                    className="w-full bg-green-600 hover:bg-green-700 text-white"
-                  >
-                    <ShoppingCart className="w-4 h-4 mr-2" />
-                    Add to Cart
-                  </Button>
-                </CardFooter>
-              </Card>
+                  </CardHeader>
+                  <CardContent className="p-4">
+                    <Badge variant="secondary" className="mb-2 bg-green-100 text-green-800">
+                      {product.category}
+                    </Badge>
+                    <CardTitle className="text-lg mb-2 line-clamp-2">{product.name}</CardTitle>
+                    <div className="flex items-center mb-2">
+                      <div className="flex items-center mr-2">
+                        {renderStars(product.rating)}
+                      </div>
+                      <span className="text-sm text-gray-600">({product.reviews})</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <span className="text-2xl font-bold text-green-600">${product.price}</span>
+                      {product.originalPrice && (
+                        <span className="text-sm text-gray-500 line-through">${product.originalPrice}</span>
+                      )}
+                    </div>
+                  </CardContent>
+                  <CardFooter className="p-4 pt-0">
+                    <Button
+                      onClick={(e) => {
+                        e.preventDefault();
+                        addToCart();
+                      }}
+                      className="w-full bg-green-600 hover:bg-green-700 text-white"
+                    >
+                      <ShoppingCart className="w-4 h-4 mr-2" />
+                      Add to Cart
+                    </Button>
+                  </CardFooter>
+                </Card>
+              </Link>
             ))}
           </div>
         ) : (

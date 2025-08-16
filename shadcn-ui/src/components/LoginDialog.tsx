@@ -76,6 +76,12 @@ export default function LoginDialog({ onLogin }: LoginDialogProps) {
           <Button onClick={handleLogin} className="w-full bg-green-600 hover:bg-green-700">
             Login
           </Button>
+          <div className="text-center text-sm text-gray-600">
+            Don't have an account?{' '}
+            <a href="/register" className="text-green-600 hover:underline">
+              Register here
+            </a>
+          </div>
         </div>
       </DialogContent>
     </Dialog>

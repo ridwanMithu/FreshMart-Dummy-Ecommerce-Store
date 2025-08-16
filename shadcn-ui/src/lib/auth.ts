@@ -50,6 +50,32 @@ export const login = (email: string, password: string): User | null => {
   return null;
 };
 
+export const register = (name: string, email: string, password: string): User | null => {
+  initializeUsers();
+  
+  // Check if user already exists
+  const users: User[] = JSON.parse(localStorage.getItem(USERS_KEY) || '[]');
+  const existingUser = users.find(u => u.email === email);
+  
+  if (existingUser) {
+    return null; // User already exists
+  }
+  
+  // Create new user
+  const newUser: User = {
+    id: Date.now().toString(),
+    email,
+    role: 'user',
+    name
+  };
+  
+  users.push(newUser);
+  localStorage.setItem(USERS_KEY, JSON.stringify(users));
+  localStorage.setItem(CURRENT_USER_KEY, JSON.stringify(newUser));
+  
+  return newUser;
+};
+
 export const logout = () => {
   localStorage.removeItem(CURRENT_USER_KEY);
 };
@@ -66,4 +92,28 @@ export const isAuthenticated = (): boolean => {
 export const isAdmin = (): boolean => {
   const user = getCurrentUser();
   return user?.role === 'admin' || false;
+};
+
+export const updateUserProfile = (name: string, email: string): User | null => {
+  const currentUser = getCurrentUser();
+  if (!currentUser) return null;
+  
+  const users: User[] = JSON.parse(localStorage.getItem(USERS_KEY) || '[]');
+  const userIndex = users.findIndex(u => u.id === currentUser.id);
+  
+  if (userIndex !== -1) {
+    users[userIndex] = {
+      ...users[userIndex],
+      name,
+      email
+    };
+    
+    localStorage.setItem(USERS_KEY, JSON.stringify(users));
+    
+    const updatedUser = users[userIndex];
+    localStorage.setItem(CURRENT_USER_KEY, JSON.stringify(updatedUser));
+    return updatedUser;
+  }
+  
+  return null;
 };
