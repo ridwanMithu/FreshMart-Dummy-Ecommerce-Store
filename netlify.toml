@@ -1,5 +1,5 @@
 [build]
-  command = "cd shadcn-ui && npm run build"
+  command = "cd shadcn-ui && pnpm run build"
   publish = "shadcn-ui/dist"
 
 [[redirects]]

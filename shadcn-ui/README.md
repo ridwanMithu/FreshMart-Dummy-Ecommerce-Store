@@ -1,61 +1,65 @@
-# Shadcn-UI Template Usage Instructions
+# FreshMart E-commerce Website
 
-## technology stack
+A modern e-commerce website built with React, TypeScript, and Vite.
 
-This project is built with:
+## Features
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- Product browsing with search and filtering
+- Product details page
+- Shopping cart functionality
+- User authentication (login/logout)
+- User profile management
+- Admin panel for adding products
+- Responsive design for all device sizes
 
-All shadcn/ui components have been downloaded under `@/components/ui`.
+## Deployment
 
-## File Structure
+This project is configured for deployment on Netlify. The following files are important for deployment:
 
-- `index.html` - HTML entry point
-- `vite.config.ts` - Vite configuration file
-- `tailwind.config.js` - Tailwind CSS configuration file
-- `package.json` - NPM dependencies and scripts
-- `src/app.tsx` - Root component of the project
-- `src/main.tsx` - Project entry point
-- `src/index.css` - Existing CSS configuration
+- `netlify.toml` - Contains build settings for Netlify
+- `public/_redirects` - Handles client-side routing for single-page applications
 
-## Components
+### Netlify Deployment Settings
 
-- All shadcn/ui components are pre-downloaded and available at `@/components/ui`
+When deploying to Netlify, use these settings:
 
-## Styling
+1. **Build Command**: `cd shadcn-ui && pnpm run build`
+2. **Publish Directory**: `shadcn-ui/dist`
 
-- Add global styles to `src/index.css` or create new CSS files as needed
-- Use Tailwind classes for styling components
+### Customizing Product Data
+
+Product data is stored in `src/lib/productData.json`. To add more products:
+
+1. Add new product objects to the JSON array
+2. Each product should have the following properties:
+   - `id` (string): Unique identifier
+   - `name` (string): Product name
+   - `price` (number): Product price
+   - `category` (string): Product category
+   - `image` (string): URL to product image
+   - `description` (string): Product description
+   - `rating` (number): Product rating (0-5)
+   - `reviews` (number): Number of reviews
+
+After updating the JSON file, update the `src/lib/products.ts` file to include the new products in the `initializeProducts` function.
 
 ## Development
 
-- Import components from `@/components/ui` in your React components
-- Customize the UI by modifying the Tailwind configuration
+To run the development server:
 
-## Note
-
-The `@/` path alias points to the `src/` directory
-
-# Commands
-
-**Install Dependencies**
-
-```shell
-pnpm i
+```bash
+cd shadcn-ui
+npm install
+npm run dev
 ```
 
-**Start Preview**
+## Building for Production
 
-```shell
-pnpm run dev
+To create a production build:
+
+```bash
+cd shadcn-ui
+npm run build
 ```
 
-**To build**
-
-```shell
-pnpm run build
-```
+The built files will be in the `dist` directory.
