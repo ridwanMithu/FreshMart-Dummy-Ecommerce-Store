@@ -1,8 +1,11 @@
 [build]
-  command = "cd shadcn-ui && pnpm run build"
+  command = "cd shadcn-ui && pnpm install && pnpm run build"
   publish = "shadcn-ui/dist"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+[functions]
+  node_version = "16.14.0"
