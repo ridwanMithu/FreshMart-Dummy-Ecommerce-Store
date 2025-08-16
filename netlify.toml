@@ -8,4 +8,4 @@
   status = 200
 
 [functions]
-node_version = { version = "16.14.0" }
+node_version = { version = "18.18.0" }
